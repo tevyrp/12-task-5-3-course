@@ -1,0 +1,6 @@
+public class MenuGenerator {
+    private MenuComponent menuComponent;
+
+    public MenuGenerator(MenuComponent menuComponent) {
+        this.menuComponent = menuComponent;
+    }
