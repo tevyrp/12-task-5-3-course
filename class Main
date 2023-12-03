@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args) {
+        
+        MenuComponent menu = new Menu();
+       
+        MenuGenerator menuGenerator = new MenuGenerator(menu);
+        menuGenerator.generateMenu();
+
+        menu.display();
+    }
+}
