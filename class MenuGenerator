@@ -4,3 +4,24 @@ public class MenuGenerator {
     public MenuGenerator(MenuComponent menuComponent) {
         this.menuComponent = menuComponent;
     }
+ public void generateMenu() {
+        Category appetizers = new Category("Appetizers");
+        appetizers.add(new Dish("Bruschetta", 8.99));
+        appetizers.add(new Dish("Calamari", 12.99));
+        appetizers.add(new Dish("Caprese Salad", 9.99));
+
+        Category entrees = new Category("Entrees");
+        entrees.add(new Dish("Spaghetti Bolognese", 15.99));
+        entrees.add(new Dish("Chicken Parmesan", 18.99));
+        entrees.add(new Dish("Grilled Salmon", 22.99));
+
+        Category desserts = new Category("Desserts");
+        desserts.add(new Dish("Tiramisu", 7.99));
+        desserts.add(new Dish("Cannoli", 6.99));
+        desserts.add(new Dish("Gelato", 5.99));
+
+        menuComponent.add(appetizers);
+        menuComponent.add(entrees);
+        menuComponent.add(desserts);
+    }
+}
