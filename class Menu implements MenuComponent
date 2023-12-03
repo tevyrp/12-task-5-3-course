@@ -1,0 +1,22 @@
+public class Menu implements MenuComponent {
+    private List<MenuComponent> components = new ArrayList<>();
+
+    @Override
+    public void add(MenuComponent component) {
+        components.add(component);
+    }
+
+    @Override
+    public void remove(MenuComponent component) {
+        components.remove(component);
+    }
+
+    @Override
+    public void display() {
+        for (MenuComponent component : components) {
+            component.display();
+        }
+    }
+}
+
+
